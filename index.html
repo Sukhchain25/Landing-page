@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Leading Cushion, Rug, and Relief Blanket Exporter from India. High-quality B2B products for global buyers."
+    />
+    <meta
+      name="keywords"
+      content="Cushion exporter India, Rug supplier, Relief blanket manufacturer, B2B textile exporter"
+    />
+    <meta name="author" content="CottonEdge Exports" />
+    <title>CottonEdge Exports – Premium Cushions, Rugs & Relief Blankets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      :root {
+        --primary: #4f46e5;
+        --primary-light: #6366f1;
+        --secondary: #10b981;
+        --dark: #1e293b;
+        --light: #f8fafc;
+        --gray: #64748b;
+        --gray-light: #e2e8f0;
+      }
+
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        background-color: #ffffff;
+        color: var(--dark);
+        scroll-behavior: smooth;
+      }
+
+      .title-font {
+        font-family: "Playfair Display", serif;
+      }
+
+      .gradient-text {
+        background: linear-gradient(
+          90deg,
+          var(--primary) 0%,
+          var(--primary-light) 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .gradient-bg {
+        background: linear-gradient(
+          135deg,
+          var(--primary) 0%,
+          var(--primary-light) 100%
+        );
+      }
+
+      /* Animations */
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes scaleIn {
+        from {
+          transform: scale(0.9);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .animate-fadein {
+        animation: fadeIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      }
+
+      .animate-scalein {
+        animation: scaleIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      }
+
+      .delay-100 {
+        animation-delay: 100ms;
+      }
+      .delay-200 {
+        animation-delay: 200ms;
+      }
+      .delay-300 {
+        animation-delay: 300ms;
+      }
+      .delay-400 {
+        animation-delay: 400ms;
+      }
+      .delay-500 {
+        animation-delay: 500ms;
+      }
+
+      /* Glassmorphism effect */
+      .glass {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+
+      /* Custom shadows */
+      .shadow-soft {
+        box-shadow: 0 4px 24px -2px rgba(0, 0, 0, 0.08);
+      }
+
+      .shadow-hard {
+        box-shadow: 0 8px 32px -4px rgba(0, 0, 0, 0.12);
+      }
+
+      /* Hover effects */
+      .hover-scale {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .hover-scale:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.12);
+      }
+
+      /* Custom shapes */
+      .shape-blob {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: linear-gradient(
+          135deg,
+          rgba(79, 70, 229, 0.15) 0%,
+          rgba(99, 102, 241, 0.15) 100%
+        );
+        border-radius: 30% 50% 20% 40%;
+        filter: blur(40px);
+        opacity: 0.6;
+        z-index: -1;
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: var(--gray-light);
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: var(--primary);
+        border-radius: 4px;
+      }
+
+      /* Product card layout */
+      .product-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        background: white;
+        border-radius: 1.5rem;
+        overflow: hidden;
+      }
+
+      @media (max-width: 768px) {
+        .product-card {
+          flex-direction: column;
+        }
+      }
+
+      /* Modern input styles */
+      .input-field {
+        transition: all 0.3s ease;
+        border: 1px solid var(--gray-light);
+      }
+
+      .input-field:focus {
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+      }
+
+      /* Section spacing */
+      .section-spacing {
+        padding: 6rem 1.5rem;
+      }
+
+      @media (min-width: 768px) {
+        .section-spacing {
+          padding: 8rem 1.5rem;
+        }
+      }
+
+      /* Background patterns */
+      .bg-pattern {
+        background-color: #f8fafc;
+        background-image: radial-gradient(
+          var(--gray-light) 1.5px,
+          transparent 1px
+        );
+        background-attachment: fixed;
+        background-size: 30px 30px;
+      }
+    </style>
+  </head>
+  <body class="bg-pattern">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center">
+          <span class="title-font text-2xl font-bold gradient-text"
+            >CottonEdge</span
+          >
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a
+            href="#products"
+            class="font-medium text-gray-700 hover:text-primary transition relative group"
+          >
+            Products
+            <span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"
+            ></span>
+          </a>
+          <a
+            href="#features"
+            class="font-medium text-gray-700 hover:text-primary transition relative group"
+          >
+            About
+            <span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"
+            ></span>
+          </a>
+          <a
+            href="#contact"
+            class="font-medium text-gray-700 hover:text-primary transition relative group"
+          >
+            Contact
+            <span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"
+            ></span>
+          </a>
+        </div>
+        <div class="md:hidden">
+          <button class="text-gray-700">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="min-h-screen flex items-center justify-center pt-20 pb-16 px-6 relative overflow-hidden"
+    >
+      <div
+        class="shape-blob top-1/4 -left-20 animate-float animation-delay-2000"
+      ></div>
+      <div class="shape-blob bottom-1/4 -right-20 animate-float"></div>
+
+      <div
+        class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10"
+      >
+        <div class="animate-fadein delay-100">
+          <div class="flex flex-col space-y-8">
+            <!-- Company Branding -->
+            <div>
+              <span
+                class="title-font text-5xl md:text-6xl font-bold gradient-text block mb-2"
+                >CottonEdge</span
+              >
+              <div
+                class="inline-flex items-center px-4 py-2 rounded-full bg-white/80 backdrop-blur-sm shadow-soft"
+              >
+                <span class="w-2 h-2 rounded-full bg-primary mr-2"></span>
+                <span class="text-sm font-medium text-gray-700"
+                  >Premium Textile Exporter</span
+                >
+              </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="space-y-6">
+              <h1
+                class="title-font text-4xl md:text-5xl font-bold leading-tight"
+              >
+                Premium <span class="gradient-text">Textile Solutions</span>
+              </h1>
+
+              <p class="text-xl text-gray-600 leading-relaxed">
+                Exporting high-quality cushions, rugs, and relief blankets from
+                India to global markets. Sustainable materials, artisan
+                craftsmanship, and competitive pricing.
+              </p>
+            </div>
+
+            <!-- CTAs -->
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#contact"
+                class="gradient-bg text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transition-all flex items-center"
+              >
+                Request Quote <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+              <a
+                href="#products"
+                class="bg-white text-gray-800 px-8 py-4 rounded-full font-semibold shadow-soft hover:shadow-hard transition-all flex items-center"
+              >
+                View Products <i class="fas fa-box-open ml-2"></i>
+              </a>
+            </div>
+
+            <!-- Slogan -->
+            <p class="text-lg text-gray-500 italic mt-4">
+              "From Our Looms to Your Living Rooms"
+            </p>
+          </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="relative hidden md:block animate-fadein delay-300">
+          <div class="relative z-10 hover-scale">
+            <!-- Decorative borders -->
+            <div
+              class="absolute -top-6 -left-6 w-full h-full rounded-3xl border-2 border-primary/20"
+            ></div>
+            <div
+              class="absolute -top-3 -left-3 w-full h-full rounded-3xl border-2 border-primary/20"
+            ></div>
+
+            <!-- Main image -->
+            <img
+              src="https://images.unsplash.com/photo-1654325633346-ddbbca28e156?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGN1c2hpb25zfGVufDB8fDB8fHww"
+              alt="CottonEdge Cushions"
+              class="rounded-2xl shadow-hard w-full h-[32rem] object-cover relative z-20"
+            />
+
+            <!-- Shipping Badge - Now properly positioned -->
+            <div
+              class="absolute z-30 bottom-4 right-4 bg-white p-5 rounded-2xl shadow-hard w-60 animate-fadein delay-500"
+            >
+              <div class="flex items-center">
+                <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                  <i class="fas fa-shipping-fast text-primary text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800">Global Shipping</h4>
+                  <p class="text-sm text-gray-600">Fast & reliable worldwide</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section-spacing">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16 animate-fadein">
+          <span
+            class="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium mb-4"
+          >
+            Our Products
+          </span>
+          <h2 class="title-font text-4xl md:text-5xl font-bold mb-6">
+            Premium <span class="gradient-text">Textile Range</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            High-quality textile products crafted with care and precision for
+            global markets
+          </p>
+        </div>
+
+        <div class="space-y-16 max-w-6xl mx-auto">
+          <!-- Product 1 -->
+          <div
+            class="bg-white rounded-2xl overflow-hidden shadow-hard hover-scale animate-fadein delay-100 p-8 product-card"
+          >
+            <div
+              class="w-full md:w-1/2 h-96 overflow-hidden rounded-xl relative"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1593782833523-08cec95e5118?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Cushions"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              />
+              <div
+                class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium"
+              >
+                <i class="fas fa-tag text-primary mr-1"></i> Bestseller
+              </div>
+            </div>
+            <div class="w-full md:w-1/2">
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3"
+                >
+                  <i class="fas fa-couch text-primary"></i>
+                </div>
+                <h3 class="title-font text-2xl font-semibold">
+                  Designer Cushions
+                </h3>
+              </div>
+              <p class="text-gray-600 mb-6">
+                Vibrant, soft, and made with export-quality cotton – perfect for
+                luxury interiors and comfort-oriented buyers worldwide.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-secondary mr-2"></i>
+                  Custom designs available
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-secondary mr-2"></i>
+                  OEKO-TEX certified fabrics
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-secondary mr-2"></i>
+                  Bulk order discounts
+                </li>
+              </ul>
+              <div class="flex flex-wrap gap-3">
+                <a
+                  href="#contact"
+                  class="flex-1 text-center gradient-bg text-white font-medium py-3 px-4 rounded-lg hover:shadow-lg transition flex items-center justify-center"
+                >
+                  <i class="fas fa-envelope mr-2"></i> Enquire
+                </a>
+                <a
+                  href="#catalog"
+                  class="flex-1 text-center border border-gray-300 text-gray-700 font-medium py-3 px-4 rounded-lg hover:border-primary hover:text-primary transition flex items-center justify-center"
+                >
+                  <i class="fas fa-download mr-2"></i> Catalog
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div
+            class="bg-white rounded-2xl overflow-hidden shadow-hard hover-scale animate-fadein delay-200 p-8 product-card"
+          >
+            <div
+              class="w-full md:w-1/2 h-96 overflow-hidden rounded-xl relative"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1594040226829-7f251ab46d80?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cnVnc3xlbnwwfHwwfHx8MA%3D%3D"
+                alt="Rugs"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              />
+              <div
+                class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium"
+              >
+                <i class="fas fa-star text-yellow-400 mr-1"></i> Premium
+              </div>
+            </div>
+            <div class="w-full md:w-1/2">
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3"
+                >
+                  <i class="fas fa-rug text-primary"></i>
+                </div>
+                <h3 class="title-font text-2xl font-semibold">
+                  Handwoven Rugs
+                </h3>
+              </div>
+              <p class="text-gray-600 mb-6">
+                Artisan-made rugs with intricate designs and eco-friendly dyes.
+                Ideal for boutiques and large-scale resellers.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-secondary mr-2"></i>
+                  Traditional craftsmanship
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-secondary mr-2"></i>
+                  Sustainable materials
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-secondary mr-2"></i>
+                  Custom sizes & patterns
+                </li>
+              </ul>
+              <div class="flex flex-wrap gap-3">
+                <a
+                  href="#contact"
+                  class="flex-1 text-center gradient-bg text-white font-medium py-3 px-4 rounded-lg hover:shadow-lg transition flex items-center justify-center"
+                >
+                  <i class="fas fa-envelope mr-2"></i> Enquire
+                </a>
+                <a
+                  href="#catalog"
+                  class="flex-1 text-center border border-gray-300 text-gray-700 font-medium py-3 px-4 rounded-lg hover:border-primary hover:text-primary transition flex items-center justify-center"
+                >
+                  <i class="fas fa-download mr-2"></i> Catalog
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div
+            class="bg-white rounded-2xl overflow-hidden shadow-hard hover-scale animate-fadein delay-300 p-8 product-card"
+          >
+            <div
+              class="w-full md:w-1/2 h-96 overflow-hidden rounded-xl relative"
+            >
+              <img
+                src="https://5.imimg.com/data5/SELLER/Default/2023/11/362723480/AM/GV/UP/7142613/woollen-relief-blankets.jpg"
+                alt="Relief Blankets"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              />
+              <div
+                class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium"
+              >
+                <i class="fas fa-bolt text-orange-400 mr-1"></i> High Demand
+              </div>
+            </div>
+            <div class="w-full md:w-1/2">
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3"
+                >
+                  <i class="fas fa-tshirt text-primary"></i>
+                </div>
+                <h3 class="title-font text-2xl font-semibold">
+                  Relief Blankets
+                </h3>
+              </div>
+              <p class="text-gray-600 mb-6">
+                Bulk-ready, warm, and affordable – trusted by NGOs and aid
+                agencies globally for disaster relief and humanitarian supply.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-secondary mr-2"></i>
+                  High-volume production
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-secondary mr-2"></i>
+                  Quick turnaround
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <i class="fas fa-check-circle text-secondary mr-2"></i>
+                  Cost-effective solutions
+                </li>
+              </ul>
+              <div class="flex flex-wrap gap-3">
+                <a
+                  href="#contact"
+                  class="flex-1 text-center gradient-bg text-white font-medium py-3 px-4 rounded-lg hover:shadow-lg transition flex items-center justify-center"
+                >
+                  <i class="fas fa-envelope mr-2"></i> Enquire
+                </a>
+                <a
+                  href="#catalog"
+                  class="flex-1 text-center border border-gray-300 text-gray-700 font-medium py-3 px-4 rounded-lg hover:border-primary hover:text-primary transition flex items-center justify-center"
+                >
+                  <i class="fas fa-download mr-2"></i> Catalog
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <span
+            class="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium mb-4"
+          >
+            Our Advantages
+          </span>
+          <h2 class="title-font text-4xl md:text-5xl font-bold mb-6">
+            Why Choose <span class="gradient-text">CottonEdge</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            We go beyond just supplying products - we build lasting partnerships
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-gray-50 p-8 rounded-2xl hover-scale animate-fadein delay-100"
+          >
+            <div
+              class="w-14 h-14 rounded-xl gradient-bg text-white flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-medal text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Quality Assurance</h3>
+            <p class="text-gray-600">
+              Rigorous quality checks at every production stage ensure only the
+              best products reach our clients.
+            </p>
+          </div>
+
+          <div
+            class="bg-gray-50 p-8 rounded-2xl hover-scale animate-fadein delay-200"
+          >
+            <div
+              class="w-14 h-14 rounded-xl gradient-bg text-white flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-leaf text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Sustainable Practices</h3>
+            <p class="text-gray-600">
+              Eco-friendly materials and ethical production methods that respect
+              both people and planet.
+            </p>
+          </div>
+
+          <div
+            class="bg-gray-50 p-8 rounded-2xl hover-scale animate-fadein delay-300"
+          >
+            <div
+              class="w-14 h-14 rounded-xl gradient-bg text-white flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-globe text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Global Logistics</h3>
+            <p class="text-gray-600">
+              Efficient shipping and customs handling to deliver anywhere in the
+              world on time.
+            </p>
+          </div>
+
+          <div
+            class="bg-gray-50 p-8 rounded-2xl hover-scale animate-fadein delay-400"
+          >
+            <div
+              class="w-14 h-14 rounded-xl gradient-bg text-white flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-cogs text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Custom Solutions</h3>
+            <p class="text-gray-600">
+              Tailored products to meet your specific requirements and market
+              needs.
+            </p>
+          </div>
+
+          <div
+            class="bg-gray-50 p-8 rounded-2xl hover-scale animate-fadein delay-500"
+          >
+            <div
+              class="w-14 h-14 rounded-xl gradient-bg text-white flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-hand-holding-usd text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Competitive Pricing</h3>
+            <p class="text-gray-600">
+              Direct manufacturer prices without middlemen, offering best value.
+            </p>
+          </div>
+
+          <div
+            class="bg-gray-50 p-8 rounded-2xl hover-scale animate-fadein delay-600"
+          >
+            <div
+              class="w-14 h-14 rounded-xl gradient-bg text-white flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-headset text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Dedicated Support</h3>
+            <p class="text-gray-600">
+              24/7 customer service to address your queries and concerns
+              promptly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <!-- <section class="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium mb-4">
+          Client Testimonials
+        </span>
+        <h2 class="title-font text-4xl md:text-5xl font-bold mb-6">What Our <span class="gradient-text">Clients Say</span></h2>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow-soft hover-scale animate-fadein delay-100">
+          <div class="flex items-center mb-4">
+            <div class="text-yellow-400 mr-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <p class="text-gray-600 italic mb-6">
+            "CottonEdge has been our reliable partner for over 5 years. Their cushion quality is exceptional and their team is always responsive to our needs."
+          </p>
+          <div class="flex items-center">
+            <img src="https://randomuser.me/api/portraits/women/32.jpg" class="w-12 h-12 rounded-full mr-4" alt="Client">
+            <div>
+              <h4 class="font-bold">Sarah Johnson</h4>
+              <p class="text-sm text-gray-600">Home Decor Importer, UK</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-soft hover-scale animate-fadein delay-200">
+          <div class="flex items-center mb-4">
+            <div class="text-yellow-400 mr-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <p class="text-gray-600 italic mb-6">
+            "The relief blankets we ordered arrived on time and exceeded our expectations in quality. Will definitely order again for our humanitarian projects."
+          </p>
+          <div class="flex items-center">
+            <img src="https://randomuser.me/api/portraits/men/54.jpg" class="w-12 h-12 rounded-full mr-4" alt="Client">
+            <div>
+              <h4 class="font-bold">Michael Chen</h4>
+              <p class="text-sm text-gray-600">NGO Director, Canada</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-soft hover-scale animate-fadein delay-300">
+          <div class="flex items-center mb-4">
+            <div class="text-yellow-400 mr-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <p class="text-gray-600 italic mb-6">
+            "Their custom rug service allowed us to create unique designs for our boutique. The craftsmanship is truly artisan-level. Highly recommended!"
+          </p>
+          <div class="flex items-center">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" class="w-12 h-12 rounded-full mr-4" alt="Client">
+            <div>
+              <h4 class="font-bold">Elena Rodriguez</h4>
+              <p class="text-sm text-gray-600">Boutique Owner, Spain</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <span
+            class="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium mb-4"
+          >
+            Our Process
+          </span>
+          <h2 class="title-font text-4xl md:text-5xl font-bold mb-6">
+            How We <span class="gradient-text">Work</span>
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            From idea to doorstep, our process is built for global buyers who
+            need reliability, customization, and consistent quality in every
+            shipment.
+          </p>
+        </div>
+
+        <div class="relative">
+          <div
+            class="hidden md:block absolute left-1/2 top-0 h-full w-0.5 bg-gradient-to-b from-primary to-primary-light transform -translate-x-1/2"
+          ></div>
+
+          <!-- Step 1 -->
+          <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="md:text-right animate-fadein delay-100">
+              <div
+                class="inline-flex items-center justify-center w-16 h-16 rounded-full gradient-bg text-white text-xl font-bold mb-4 md:ml-auto"
+              >
+                1
+              </div>
+              <h3 class="text-xl font-bold mb-2">
+                Initial Consultation & Product Briefing
+              </h3>
+              <p class="text-gray-600">
+                We begin by understanding your business, product goals, and
+                market dynamics. Whether you’re sourcing cushions for a retail
+                chain, relief blankets for humanitarian projects, or
+                custom-designed rugs, we ask the right questions to ensure
+                alignment. We also guide you through fabric choices, fill
+                materials, dimensions, target price points, certifications
+                required, and packaging expectations — all tailored for your
+                audience and destination country.
+              </p>
+            </div>
+            <div class="hidden md:block"></div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="hidden md:block"></div>
+            <div class="animate-fadein delay-200">
+              <div
+                class="inline-flex items-center justify-center w-16 h-16 rounded-full gradient-bg text-white text-xl font-bold mb-4"
+              >
+                2
+              </div>
+              <h3 class="text-xl font-bold mb-2">
+                Prototype Development & Sample Approval
+              </h3>
+              <p class="text-gray-600">
+                Once the specs are finalized, we develop product samples that
+                match your brief to the finest detail — stitching, texture,
+                size, and color accuracy. We ship these samples to you for
+                hands-on evaluation. Feedback is welcomed and encouraged. Need
+                tighter stitching? Softer fill? Label adjustments? No problem.
+                We iterate till you sign off on a version you’d confidently
+                scale and sell. This phase eliminates guesswork before mass
+                production.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="md:text-right animate-fadein delay-300">
+              <div
+                class="inline-flex items-center justify-center w-16 h-16 rounded-full gradient-bg text-white text-xl font-bold mb-4 md:ml-auto"
+              >
+                3
+              </div>
+              <h3 class="text-xl font-bold mb-2">
+                Production with Real-Time Quality Checks
+              </h3>
+              <p class="text-gray-600">
+                Once approved, your order moves into production. Our facilities
+                combine skilled artisanship with industrial efficiency. Every
+                batch goes through multiple quality control checks — raw
+                material verification, cutting precision, stitching strength,
+                visual inspection, and weight/size conformity. Production
+                timelines are transparently shared with you, and we keep you
+                updated at each milestone. We believe that great products come
+                from a controlled and traceable process — not just machines.
+              </p>
+            </div>
+            <div class="hidden md:block"></div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="hidden md:block"></div>
+            <div class="animate-fadein delay-400">
+              <div
+                class="inline-flex items-center justify-center w-16 h-16 rounded-full gradient-bg text-white text-xl font-bold mb-4"
+              >
+                4
+              </div>
+              <h3 class="text-xl font-bold mb-2">
+                Packaging, Documentation & Global Shipping
+              </h3>
+              <p class="text-gray-600">
+                After final QC, your products are packed with export-grade
+                materials to ensure safe delivery across long distances. We
+                handle all necessary export documentation including invoice,
+                packing list, certificate of origin, fumigation (if required),
+                and coordinate with your freight partner or ours. Whether it’s
+                FOB or door delivery, we ensure your goods arrive intact, on
+                time, and hassle-free. We also share post-shipment tracking and
+                remain in touch until final delivery.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog Download Section -->
+    <section
+      id="catalog"
+      class="py-20 px-6 gradient-bg text-white relative overflow-hidden"
+    >
+      <div
+        class="shape-blob top-1/4 -left-20 animate-float animation-delay-2000 opacity-20"
+      ></div>
+      <div
+        class="shape-blob bottom-1/4 -right-20 animate-float opacity-20"
+      ></div>
+
+      <div class="max-w-4xl mx-auto text-center relative z-10 animate-fadein">
+        <div class="glass p-10 rounded-2xl">
+          <div
+            class="w-20 h-20 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center mx-auto mb-6"
+          >
+            <i class="fas fa-book-open text-2xl"></i>
+          </div>
+          <h2 class="title-font text-3xl md:text-4xl font-bold mb-6">
+            Download Our Product Catalog
+          </h2>
+          <p class="text-xl opacity-90 mb-8">
+            Get complete details about our product range, specifications, and
+            customization options.
+          </p>
+          <form class="max-w-md mx-auto">
+            <div class="mb-6">
+              <input
+                type="email"
+                placeholder="Your Email Address"
+                required
+                class="w-full px-6 py-4 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"
+              />
+            </div>
+            <button
+              type="submit"
+              class="bg-white text-gray-500 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition shadow-lg flex items-center justify-center mx-auto"
+            >
+              <i class="fas fa-download mr-2"></i> Download Now
+            </button>
+          </form>
+          <p class="text-sm mt-6 opacity-80">
+            We respect your privacy. Your email will only be used to send the
+            catalog.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto text-center animate-fadein">
+        <h2 class="title-font text-3xl md:text-4xl font-bold mb-6">
+          Ready to Partner With Us?
+        </h2>
+        <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          Join hundreds of satisfied global clients who trust CottonEdge for
+          their textile needs.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a
+            href="#contact"
+            class="gradient-bg text-white px-8 py-4 rounded-full font-bold hover:shadow-lg transition flex items-center"
+          >
+            <i class="fas fa-envelope mr-2"></i> Request Quote
+          </a>
+          <a
+            href="tel:+918295487015"
+            class="border-2 border-primary text-primary px-8 py-4 rounded-full font-bold hover:bg-primary hover:text-white transition flex items-center"
+          >
+            <i class="fas fa-phone-alt mr-2"></i> Call Us Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-spacing bg-gray-50">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+        <div class="animate-fadein delay-100">
+          <h2 class="title-font text-4xl md:text-5xl font-bold mb-8">
+            Get in <span class="gradient-text">Touch</span>
+          </h2>
+          <p class="text-gray-600 mb-8 text-lg">
+            Have questions about our products or services? Our team is ready to
+            assist you with any inquiries.
+          </p>
+          <div class="space-y-6">
+            <div
+              class="flex items-start bg-white p-6 rounded-xl shadow-soft hover-scale"
+            >
+              <div class="flex-shrink-0 bg-primary/10 rounded-lg p-3 mr-4">
+                <i class="fas fa-envelope text-primary text-xl"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg mb-1">Email Us</h3>
+                <a
+                  href="mailto:contact@cottonedgeexports.in"
+                  class="text-primary hover:underline"
+                  >contact@cottonedgeexports.in</a
+                >
+              </div>
+            </div>
+            <div
+              class="flex items-start bg-white p-6 rounded-xl shadow-soft hover-scale"
+            >
+              <div class="flex-shrink-0 bg-primary/10 rounded-lg p-3 mr-4">
+                <i class="fas fa-phone-alt text-primary text-xl"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg mb-1">Call Us</h3>
+                <a href="tel:+918295487015" class="text-primary hover:underline"
+                  >+91 8295487015</a
+                >
+              </div>
+            </div>
+            <div
+              class="flex items-start bg-white p-6 rounded-xl shadow-soft hover-scale"
+            >
+              <div class="flex-shrink-0 bg-primary/10 rounded-lg p-3 mr-4">
+                <i class="fas fa-map-marker-alt text-primary text-xl"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg mb-1">Find Us</h3>
+                <p class="text-gray-600">
+                  Sector 25, Phase 2 HUDA, Panipat, Haryana, India
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="animate-fadein delay-300">
+          <div class="bg-white rounded-2xl shadow-hard p-8 h-full">
+            <h3 class="title-font text-2xl font-bold mb-6">
+              Send Us a Message
+            </h3>
+            <form
+              action="https://formspree.io/f/mayvlqzr"
+              method="POST"
+              class="space-y-6"
+            >
+              <div>
+                <label for="name" class="block text-gray-700 mb-2 font-medium"
+                  >Your Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full px-4 py-3 border border-gray-200 rounded-lg input-field focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-gray-700 mb-2 font-medium"
+                  >Your Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full px-4 py-3 border border-gray-200 rounded-lg input-field focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                />
+              </div>
+              <div>
+                <label
+                  for="company"
+                  class="block text-gray-700 mb-2 font-medium"
+                  >Company Name</label
+                >
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  required
+                  class="w-full px-4 py-3 border border-gray-200 rounded-lg input-field focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                />
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-gray-700 mb-2 font-medium"
+                  >Your Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="w-full px-4 py-3 border border-gray-200 rounded-lg input-field focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full gradient-bg text-white font-bold py-4 px-6 rounded-lg hover:shadow-lg transition flex items-center justify-center"
+              >
+                <i class="fas fa-paper-plane mr-2"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.042999679644!2d76.96612331509914!3d29.39123438213188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ddbaa5a7b5e0d%3A0x5a8e8b9e9e9e9e9e!2sSector%2025%2C%20Phase%202%20HUDA%2C%20Panipat%2C%20Haryana%20132003!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+        width="100%"
+        height="100%"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-12">
+          <div>
+            <h3 class="title-font text-2xl font-bold mb-6 gradient-text">
+              CottonEdge
+            </h3>
+            <p class="text-gray-400 mb-6">
+              Premium textile exporter from India serving global markets with
+              quality products.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white transition">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-6">Products</h4>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Designer Cushions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Handwoven Rugs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Relief Blankets</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Custom Textiles</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-6">Company</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-white transition"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#process"
+                  class="text-gray-400 hover:text-white transition"
+                  >Our Process</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-6">Support</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-white transition"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >FAQs</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2025 CottonEdge Exports. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Simple animation trigger on scroll
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate-fadein");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document.querySelectorAll(".animate-fadein").forEach((el) => {
+        observer.observe(el);
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Form submission handling for contact form
+      // Form submission handling for contact form
+      const contactForm = document.querySelector(
+        'form[action="https://formspree.io/f/mayvlqzr"]'
+      );
+      if (contactForm) {
+        contactForm.addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const submitButton = this.querySelector('button[type="submit"]');
+          const originalButtonText = submitButton.innerHTML;
+
+          try {
+            // Disable button and show loading state
+            submitButton.disabled = true;
+            submitButton.innerHTML =
+              '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
+
+            const formData = {
+              name: this.querySelector("#name").value,
+              email: this.querySelector("#email").value,
+              company: this.querySelector("#company").value,
+              message: this.querySelector("#message").value,
+            };
+
+            const response = await fetch(
+              "https://lead-generation-piay.onrender.com/submit-form",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+              }
+            );
+
+            if (response.ok) {
+              alert("Thank you for your message! We will contact you soon.");
+              this.reset();
+            } else {
+              const errorData = await response.json();
+              throw new Error(errorData.message || "Failed to submit form");
+            }
+          } catch (error) {
+            console.error("Error submitting form:", error);
+            alert(
+              `Error: ${
+                error.message ||
+                "There was an error submitting your form. Please try again later."
+              }`
+            );
+          } finally {
+            // Re-enable button regardless of success/error
+            submitButton.disabled = false;
+            submitButton.innerHTML = originalButtonText;
+          }
+        });
+      }
+
+      // Catalog request form handling
+      const catalogForm = document.querySelector("#catalog form");
+      if (catalogForm) {
+        catalogForm.addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const submitButton = this.querySelector('button[type="submit"]');
+          const originalButtonText = submitButton.innerHTML;
+
+          try {
+            // Disable button and show loading state
+            submitButton.disabled = true;
+            submitButton.innerHTML =
+              '<i class="fas fa-spinner fa-spin mr-2"></i> Requesting...';
+
+            const email = this.querySelector('input[type="email"]').value;
+
+            const response = await fetch(
+              "https://lead-generation-piay.onrender.com/request-catalog",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ email }),
+              }
+            );
+
+            if (response.ok) {
+              alert(
+                "Thank you for your request! The catalog will be sent to your email shortly."
+              );
+              this.reset();
+            } else {
+              const errorData = await response.json();
+              throw new Error(errorData.message || "Failed to request catalog");
+            }
+          } catch (error) {
+            console.error("Error requesting catalog:", error);
+            alert(
+              `Error: ${
+                error.message ||
+                "There was an error processing your catalog request. Please try again later."
+              }`
+            );
+          } finally {
+            // Re-enable button regardless of success/error
+            submitButton.disabled = false;
+            submitButton.innerHTML = originalButtonText;
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
