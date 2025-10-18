@@ -730,7 +730,7 @@
             <!-- Company Branding -->
             <div>
               <span
-                class="title-font text-5xl md:text-6xl font-bold gradient-text block mb-2"
+                class="title-font text-5xl md:text-6xl font-bold gradient-text block mb-2 leading-normal pb-2"
                 >CottonEdge Exports</span
               >
               <div
@@ -2151,7 +2151,10 @@
         <div
           class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
         >
-          <p>&copy; 2025 CottonEdge Exports. All rights reserved.</p>
+          <p>
+            &copy; 2025 CottonEdge Exports. All rights reserved. <br />
+            GSTIN - 06OLFPS3631R1Z5
+          </p>
         </div>
       </div>
     </footer>
@@ -2906,13 +2909,13 @@
             const formData = {
               name: this.querySelector("#name").value,
               email: this.querySelector("#email").value,
-              company: this.querySelector("#company").value,
-              productInterest: this.querySelector("#product-interest").value,
+              companyName: this.querySelector("#company").value,
               message: this.querySelector("#message").value,
             };
 
+            // backend expects POST /:company (e.g. /cottonedge)
             const response = await fetch(
-              "https://lead-generation-piay.onrender.com/submit-form",
+              "https://lead-generation-piay.onrender.com/submit-form/cottonedge",
               {
                 method: "POST",
                 headers: {
