@@ -777,9 +777,12 @@
     <section
       class="min-h-screen flex items-center justify-center pt-20 pb-16 px-6 relative overflow-hidden hero-section"
     >
-      <!-- Video Background -->
-      <video autoplay muted loop class="video-background">
-        <source src="/hero-video.mp4" type="video/mp4" />
+      <!-- Video Background from Cloudinary -->
+      <video autoplay muted loop playsinline class="video-background">
+        <source
+          src="https://res.cloudinary.com/dftvhukp1/video/upload/v1761454268/Hero-video_1_lmwr5l.mp4"
+          type="video/mp4"
+        />
         Your browser does not support the video tag.
       </video>
       <div class="video-overlay"></div>
