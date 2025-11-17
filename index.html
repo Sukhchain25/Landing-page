@@ -105,11 +105,8 @@
       }
 
       .gradient-text {
-        background: linear-gradient(
-          90deg,
-          var(--primary) 0%,
-          var(--accent) 100%
-        );
+        background: linear-gradient(90deg, #ffb74d 0%, #fb8c00 100%);
+
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -695,6 +692,61 @@
         filter: blur(5px) brightness(0.9);
         z-index: 5;
       }
+
+      /* Scroll Indicator */
+      .scroll-indicator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .mouse {
+        width: 28px;
+        height: 45px;
+        border: 2px solid rgba(255, 255, 255, 0.7);
+        border-radius: 20px;
+        position: relative;
+        animation: bounce 2.2s infinite;
+      }
+
+      .mouse .wheel {
+        width: 4px;
+        height: 10px;
+        background: white;
+        border-radius: 4px;
+        position: absolute;
+        left: 50%;
+        top: 8px;
+        transform: translateX(-50%);
+        animation: wheel 1.4s infinite;
+      }
+
+      /* Wheel animation */
+      @keyframes wheel {
+        0% {
+          opacity: 0;
+          transform: translate(-50%, 0);
+        }
+        40% {
+          opacity: 1;
+          transform: translate(-50%, 8px);
+        }
+        100% {
+          opacity: 0;
+          transform: translate(-50%, 16px);
+        }
+      }
+
+      /* Bounce animation */
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(6px);
+        }
+      }
     </style>
   </head>
   <body class="bg-pattern" data-theme="light">
@@ -713,10 +765,10 @@
       >
         <div class="flex items-center">
           <img src="favicon.png" alt="CottonEdge Exports Logo" class="logo" />
-          <span class="title-font text-2xl font-bold">
+          <!-- <span class="title-font text-2xl font-bold">
             <span class="gradient-text">CottonEdge</span>
             <span class="text-black">Exports</span>
-          </span>
+          </span> -->
         </div>
         <div class="hidden md:flex space-x-8">
           <a
@@ -777,7 +829,7 @@
     <section
       class="min-h-screen flex items-center justify-center pt-20 pb-16 px-6 relative overflow-hidden hero-section"
     >
-      <!-- Video Background from Cloudinary -->
+      <!-- Video Background -->
       <video autoplay muted loop playsinline class="video-background">
         <source
           src="https://res.cloudinary.com/dftvhukp1/video/upload/v1761454268/Hero-video_1_lmwr5l.mp4"
@@ -802,7 +854,7 @@
             <!-- Company Branding -->
             <div>
               <span
-                class="title-font text-5xl md:text-6xl font-bold gradient-text block mb-2 leading-normal pb-2"
+                class="title-font text-4xl md:text-4xl font-bold gradient-text block mb-2 leading-normal pb-2"
                 >CottonEdge Exports</span
               >
               <div
@@ -810,7 +862,7 @@
               >
                 <span class="w-2 h-2 rounded-full bg-primary mr-2"></span>
                 <span class="text-sm font-medium text-gray-700"
-                  >Premium Textile Exporter</span
+                  >Premium Home Textile</span
                 >
               </div>
             </div>
@@ -818,17 +870,15 @@
             <!-- Main Content -->
             <div class="space-y-6">
               <h1
-                class="title-font text-4xl md:text-5xl font-bold leading-tight"
+                class="title-font text-2xl md:text-2xl font-bold leading-tight"
               >
                 Premium
                 <span class="gradient-text">Handloom & Textile Solutions</span>
               </h1>
 
               <p class="text-xl text-gray-300 leading-relaxed">
-                Exporting high-quality cushions, rugs, carpets, blankets,
-                bedsheets, throws, curtains, table covers, bath mats & towels
-                from India to global markets. Sustainable materials, artisan
-                craftsmanship, and competitive pricing.
+                We deal in exports, sourcing, and wholesale of premium home
+                textiles and home decor.
               </p>
             </div>
 
@@ -850,18 +900,14 @@
 
             <!-- Slogan -->
             <p class="text-lg text-gray-300 italic mt-4">
-              We collaborate with trusted Panipat manufacturers to offer a
-              curated selection of home textile products, tailored to your
-              design and volume needs. <br />
-              <br />
-              "From Our Looms to Your Living Rooms"
+              We work with trusted Panipat manufacturers to deliver curated home
+              textiles tailored to your needs. <br /><br />
             </p>
           </div>
         </div>
 
         <!-- Image Section -->
         <div class="relative w-[38rem] h-[30rem] perspective-1200">
-          <!-- Stack of images -->
           <img
             src="https://plus.unsplash.com/premium_photo-1683917068296-663f1388071e?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=987"
             class="stack-img absolute inset-0 rounded-xl w-full h-full object-cover opacity-100 scale-100 transition-all duration-[1200ms] ease-[cubic-bezier(0.25,0.8,0.25,1)] z-10"
@@ -887,7 +933,7 @@
             class="stack-img absolute inset-0 rounded-xl w-full h-full object-cover opacity-0 scale-[0.9] translate-y-[40px] rotate-x-[10deg] transition-all duration-[1200ms] ease-[cubic-bezier(0.25,0.8,0.25,1)]"
           />
 
-          <!-- Shadow at bottom -->
+          <!-- Shadow -->
           <div
             class="absolute bottom-[-1rem] left-0 w-full h-6 rounded-xl bg-gradient-to-t from-black/25 to-transparent blur-lg"
           ></div>
@@ -905,6 +951,18 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <div
+        class="scroll-indicator absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 cursor-pointer"
+      >
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <span class="text-gray-200 text-sm mt-3 block animate-pulse"
+          >Scroll Down</span
+        >
       </div>
     </section>
 
@@ -980,7 +1038,7 @@
             Premium <span class="gradient-text">Textile Range</span>
           </h2>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Over 30+ verified production partners across Panipat enable us to
+            Over 15+ verified production partners across Panipat enable us to
             offer flexible MOQs, multiple styles, and timely fulfillment.
           </p>
         </div>
@@ -1039,7 +1097,7 @@
           id="products-container"
         >
           <!-- Designer Cushions -->
-          <div
+          <!-- <div
             class="product-card-item bg-white rounded-2xl shadow-hard hover-scale scroll-hidden p-6 flex flex-col h-full"
             data-category="cushions"
           >
@@ -1077,7 +1135,7 @@
             >
               <i class="fas fa-info-circle mr-2"></i> View Details
             </button>
-          </div>
+          </div> -->
 
           <!-- Handwoven Rugs -->
           <div
@@ -1119,7 +1177,7 @@
           </div>
 
           <!-- Relief Blankets -->
-          <div
+          <!-- <div
             class="product-card-item bg-white rounded-2xl shadow-hard hover-scale scroll-hidden p-6 flex flex-col h-full"
             data-category="blankets"
           >
@@ -1155,7 +1213,7 @@
             >
               <i class="fas fa-info-circle mr-2"></i> View Details
             </button>
-          </div>
+          </div> -->
 
           <!-- Hand-tufted Carpets -->
           <div
@@ -1194,7 +1252,7 @@
           </div>
 
           <!-- Bedsheets -->
-          <div
+          <!-- <div
             class="product-card-item bg-white rounded-2xl shadow-hard hover-scale scroll-hidden p-6 flex flex-col h-full"
             data-category="bedding"
           >
@@ -1225,7 +1283,7 @@
             >
               <i class="fas fa-info-circle mr-2"></i> View Details
             </button>
-          </div>
+          </div> -->
 
           <!-- Cushion Covers -->
           <div
@@ -1366,7 +1424,7 @@
           </div>
 
           <!-- Towels -->
-          <div
+          <!-- <div
             class="product-card-item bg-white rounded-2xl shadow-hard hover-scale scroll-hidden p-6 flex flex-col h-full"
             data-category="bath"
           >
@@ -1397,7 +1455,7 @@
             >
               <i class="fas fa-info-circle mr-2"></i> View Details
             </button>
-          </div>
+          </div> -->
 
           <!-- Upholstery Fabrics -->
           <!-- <div
@@ -1716,8 +1774,8 @@
                     What is your minimum order quantity?
                   </h4>
                   <p class="text-gray-600 text-sm">
-                    MOQ varies by product. Cushions: 5000 pieces, Rugs: 1000
-                    pieces, Blankets: 5000 pieces. Contact us for custom
+                    MOQ varies by product. Cushions: 1000 pieces, Rugs: 1000
+                    pieces, Blankets: 1000 pieces. Contact us for custom
                     requirements.
                   </p>
                 </div>
@@ -2290,7 +2348,7 @@
               label: "Sizes Available",
               value: "12x12, 16x16, 18x18, 20x20 inches",
             },
-            { label: "MOQ", value: "5000 pieces" },
+            { label: "MOQ", value: "1000 pieces" },
             { label: "Lead Time", value: "6-8 weeks" },
             { label: "Packaging", value: "Polybag + Carton" },
           ],
@@ -2342,7 +2400,7 @@
             { label: "Material", value: "Wool Blend, Acrylic" },
             { label: "Size", value: "60x80 inches" },
             { label: "Weight", value: "1.2 kg" },
-            { label: "MOQ", value: "5000 pieces" },
+            { label: "MOQ", value: "1000 pieces" },
             { label: "Lead Time", value: "6-8 weeks" },
             { label: "Packaging", value: "Compressed + Carton" },
           ],
@@ -2442,7 +2500,7 @@
             { label: "Material", value: "Cotton, Linen, Velvet" },
             { label: "Sizes Available", value: "12x12 to 24x24 inches" },
             { label: "Closure Type", value: "Zipper, Envelope" },
-            { label: "MOQ", value: "5000 pieces" },
+            { label: "MOQ", value: "1000 pieces" },
             { label: "Lead Time", value: "5-8 weeks" },
             { label: "Packaging", value: "Polybag + Carton" },
           ],
@@ -2468,7 +2526,7 @@
             { label: "Material", value: "Wool, Cotton, Acrylic, Mink" },
             { label: "Sizes Available", value: "50x60 to 90x90 inches" },
             { label: "Weight", value: "0.8-2.5 kg" },
-            { label: "MOQ", value: "2000 pieces" },
+            { label: "MOQ", value: "1000 pieces" },
             { label: "Lead Time", value: "5-7 weeks" },
             { label: "Packaging", value: "Polybag + Carton" },
           ],
@@ -2520,7 +2578,7 @@
             { label: "Material", value: "Cotton, Microfiber, Bamboo" },
             { label: "Sizes Available", value: "20x30 to 24x40 inches" },
             { label: "Backing", value: "Rubber, PVC, Non-slip" },
-            { label: "MOQ", value: "3000 pieces" },
+            { label: "MOQ", value: "2000 pieces" },
             { label: "Lead Time", value: "5-7 weeks" },
             { label: "Packaging", value: "Polybag + Carton" },
           ],
@@ -2546,7 +2604,7 @@
             { label: "Material", value: "Cotton, Egyptian Cotton, Bamboo" },
             { label: "Sizes Available", value: "Hand, Bath, Beach, Kitchen" },
             { label: "GSM Weight", value: "400-700 GSM" },
-            { label: "MOQ", value: "10000 pieces" },
+            { label: "MOQ", value: "5000 pieces" },
             { label: "Lead Time", value: "6-8 weeks" },
             { label: "Packaging", value: "Polybag + Carton" },
           ],
